@@ -176,5 +176,30 @@
       </div>
     </div>
   </div>
+  <!-- Dummy PPT Viewer Modal -->
+  <div id="ppt-viewer-overlay" class="ppt-viewer-overlay" hidden>
+    <div class="ppt-viewer" role="dialog" aria-modal="true" aria-labelledby="ppt-viewer-title">
+      <div class="ppt-viewer-header">
+        <h3 id="ppt-viewer-title">Presentation Preview</h3>
+        <div class="viewer-actions">
+          <button id="ppt-download-btn" class="viewer-btn" title="Download">⬇️</button>
+          <button id="ppt-close-btn" class="viewer-btn" title="Close" aria-label="Close">✖</button>
+        </div>
+      </div>
+
+      <div class="ppt-viewer-main">
+        <button id="ppt-prev-btn" class="nav-btn" aria-label="Previous slide">‹</button>
+        <img id="ppt-viewer-slide" alt="Slide preview" />
+        <button id="ppt-next-btn" class="nav-btn" aria-label="Next slide">›</button>
+      </div>
+
+      <div class="ppt-viewer-footer">
+        <div id="ppt-slide-counter" class="slide-counter">Slide 1 / 1</div>
+        <div id="ppt-thumbs" class="ppt-thumbs" aria-label="Slide thumbnails"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="viewer.js"></script>
 </body>
 </html>
